@@ -1,6 +1,5 @@
 os: linux
 dist: bionic
-sudo: "true"
 language: shell
 services:
   - docker
@@ -19,4 +18,4 @@ install:
   - sudo docker buildx create --use --name qemu
   - sudo docker buildx inspect --bootstrap
 script: 
-  - ./build-test.sh
+  - ./build.sh
