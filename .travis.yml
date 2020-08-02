@@ -12,8 +12,6 @@ addons:
   apt:
     packages:
       - docker-ce
-      - docker-ce-cli 
-      - containerd.io
 install:
   - sudo docker buildx create --use --name qemu
   - sudo docker buildx inspect --bootstrap
