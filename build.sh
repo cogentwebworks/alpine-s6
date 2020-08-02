@@ -2,26 +2,6 @@
 
 # RELEASES LIST
 RELEASES=(
-    "3.5.0"
-    "3.5.1"
-    "3.5.2"
-    "3.5.3"
-    "3.6.0"
-    "3.6.1"
-    "3.6.2"
-    "3.6.3"
-    "3.6.4"
-    "3.6.5"
-    "3.7.0"
-    "3.7.1"
-    "3.7.2"
-    "3.7.3"
-    "3.8.0"
-    "3.8.1"
-    "3.8.2"
-    "3.8.3"
-    "3.8.4"
-    "3.8.5"
     "3.9.0"
     "3.9.1"
     "3.9.2"
@@ -57,13 +37,7 @@ ARCH=(
 
 # REMOVE UNSUPPORTED ARCH FOR RELEASE
 # ie: <release name>=<architecture 1>,<architecture 2>,...<architecture n>
-UNSUPPORTED=(
-    "3.5=linux/arm64,linux/ppc64le"
-    "3.6=linux/arm64"
-    "3.7=linux/arm64"
-    "3.8=linux/arm64"
-    
-)
+UNSUPPORTED=()
 checkSupport() {
 
     # local var
