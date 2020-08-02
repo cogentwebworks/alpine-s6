@@ -1,6 +1,7 @@
 # ALPINE-S6
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
-[![Docker Repository on Quay.io](https://quay.io/repository/cogentwebworks/alpine-s6/status "Docker Repository on Quay.io")](https://quay.io/repository/cogentwebworks/alpine-s6)
+[![Docker Repository on Quay](https://quay.io/repository/cogentwebworks/alpine-s6/status "Docker Repository on Quay")](https://quay.io/repository/cogentwebworks/alpine-s6)
+[![](https://api.travis-ci.org/cogentwebworks/alpine-s6.svg?branch=master)](https://travis-ci.org/github/cogentwebworks/alpine-s6)
 
 ALPINE-S6 is an image created from Alpine Linux Source with S6-Overlay
 
@@ -27,22 +28,22 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 
 `3.9.0` - Alpine Linux 3.9.0 :x:
 
->`3.9.1` - Alpine Linux 3.9.1
+>`3.9.1` - Alpine Linux 3.9.1 :shit:
 
->`3.9.2` - Alpine Linux 3.9.2
+>`3.9.2` - Alpine Linux 3.9.2 :shit:
 
->`3.9.3` - Alpine Linux 3.9.3
+>`3.9.3` - Alpine Linux 3.9.3 :shit:
 
->`3.9.4` - Alpine Linux 3.9.4
+>`3.9.4` - Alpine Linux 3.9.4 :shit:
 
 >`3.9.5` - Alpine Linux 3.9.5
 
 >`3.9.6` - Alpine Linux 3.9.6
 
 
-`3.10.0` - Alpine Linux 3.10.0
+`3.10.0` - Alpine Linux 3.10.0 :shit:
 
->`3.10.1` - Alpine Linux 3.10.1
+>`3.10.1` - Alpine Linux 3.10.1 :shit:
 
 >`3.10.2` - Alpine Linux 3.10.2
 
