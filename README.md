@@ -28,22 +28,12 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 
 `3.9.0` - Alpine Linux 3.9.0 :x:
 
->`3.9.1` - Alpine Linux 3.9.1 :shit:
-
->`3.9.2` - Alpine Linux 3.9.2 :shit:
-
->`3.9.3` - Alpine Linux 3.9.3 :shit:
-
->`3.9.4` - Alpine Linux 3.9.4 :shit:
-
 >`3.9.5` - Alpine Linux 3.9.5
 
 >`3.9.6` - Alpine Linux 3.9.6
 
 
-`3.10.0` - Alpine Linux 3.10.0 :shit:
-
->`3.10.1` - Alpine Linux 3.10.1 :shit:
+`3.10.0` - Alpine Linux 3.10.0 :x:
 
 >`3.10.2` - Alpine Linux 3.10.2
 
