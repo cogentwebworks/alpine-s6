@@ -1,6 +1,6 @@
 # ALPINE-S6
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
-[![Docker Repository on Quay.io](https://quay.io/repository/cogentwebworks/alpine-s/status "Docker Repository on Quay.io")](https://quay.io/repository/cogentwebworks/alpine-s)
+[![Docker Repository on Quay.io](https://quay.io/repository/cogentwebworks/alpine-s6/status "Docker Repository on Quay.io")](https://quay.io/repository/cogentwebworks/alpine-s6)
 
 ALPINE-S6 is an image created from Alpine Linux Source with S6-Overlay
 
