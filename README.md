@@ -77,4 +77,4 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 `latest` - Alpine Linux 3.11.6
 
 
-`docker run -it quay.io/cogentwebworks/alpine:<tag>`
+`docker run -it quay.io/cogentwebworks/alpine-s6:<tag>`
