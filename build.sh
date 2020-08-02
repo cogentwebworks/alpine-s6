@@ -50,10 +50,7 @@ EDGE_LATEST="3.12.0"
 
 # ARCHITECTURE LIST
 ARCH=(
-    "linux/386"
     "linux/amd64"
-    "linux/arm/v6"
-    "linux/arm/v7"
     "linux/arm64"
     "linux/ppc64le"
 )
@@ -65,6 +62,7 @@ UNSUPPORTED=(
     "3.6=linux/arm64"
     "3.7=linux/arm64"
     "3.8=linux/arm64"
+    
 )
 checkSupport() {
 
@@ -94,7 +92,7 @@ S6_INSTALL_VERSION="${S6_VERSION:-$S6_LATEST_VERSION}"
 echo -e "S6-OVERLAY VERSION: ${S6_INSTALL_VERSION} \n"
 
 # DOCKER LOGIN
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin &> /dev/null
+echo "$DOCKER_PASSWORD" | docker login quay.io -u "$DOCKER_USER" --password-stdin &> /dev/null
 
 # Search release for build
 for RELEASE in "${RELEASES[@]}"; do
