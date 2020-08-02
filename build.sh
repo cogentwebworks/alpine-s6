@@ -64,7 +64,7 @@ S6_INSTALL_VERSION="${S6_VERSION:-$S6_LATEST_VERSION}"
 echo -e "S6-OVERLAY VERSION: ${S6_INSTALL_VERSION} \n"
 
 # DOCKER LOGIN
-echo "$DOCKER_PASSWORD" |  docker login -u "$DOCKER_USER" --password-stdin  quay.io  &> /dev/null
+echo "$DOCKER_PASSWORD" |  sudo docker login -u "$DOCKER_USER" --password-stdin  quay.io  &> /dev/null
 
 # Search release for build
 for RELEASE in "${RELEASES[@]}"; do
@@ -122,7 +122,7 @@ for RELEASE in "${RELEASES[@]}"; do
     _PLATFORMS="$( echo ${PLATFORM[@]} | sed 's/ /,/g' )"
 
     if [ "$RELEASE" = "$LATEST_STABLE" ]; then
-         docker buildx build \
+        sudo docker buildx build \
             --push \
 	        --build-arg VERSION="${_VERSION}" \
 	        --build-arg VCS_REF="${_VCS_REF}" \
@@ -132,7 +132,7 @@ for RELEASE in "${RELEASES[@]}"; do
             -t "quay.io/${_NAME}:latest" \
 	        .
     else
-         docker buildx build \
+        sudo docker buildx build \
             --push \
 	        --build-arg VERSION="${_VERSION}" \
 	        --build-arg VCS_REF="${_VCS_REF}" \

@@ -1,18 +1,21 @@
 dist: bionic
 sudo: required
 language: shell
+services:
+  - docker
 env:
   global:
     - S6_VERSION="2.0.0.1"
     - DOCKER_CLI_EXPERIMENTAL="enabled"
-before_install:
-  - apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg |  apt-key add -
-  - add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-  - apt-get update
-  - apt-get install -y docker-ce docker-ce-cli containerd.io
-  - export DOCKER_BUILDKIT=1
+    - DOCKER_BUILDKIT=1
+addons:
+  apt:
+    packages:
+      - docker-ce
+      - docker-ce-cli 
+      - containerd.io
 install:
-  - docker buildx create --use --name qemu
-  - docker buildx inspect --bootstrap
-script: bash build.sh
+  - sudo docker buildx create --use --name qemu
+  - sudo docker buildx inspect --bootstrap
+script: 
+  - ./build-test.sh
