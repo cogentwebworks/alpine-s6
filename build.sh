@@ -2,7 +2,6 @@
 
 # RELEASES LIST
 RELEASES=(
-    "3.9.0"
     "3.9.1"
     "3.9.2"
     "3.9.3"
@@ -89,14 +88,11 @@ for RELEASE in "${RELEASES[@]}"; do
 
         _ARCH=""
         case "$_PLATFORM" in
-            linux/386)      _ARCH="x86" ;;
             linux/amd64)    _ARCH="x86_64" ;;
-            linux/arm/v6)   _ARCH="armhf" ;;
-            linux/arm/v7)   _ARCH="armhf" ;;
             linux/arm64)    _ARCH="armv7" ;;
             linux/ppc64le)  _ARCH="ppc64le" ;;
         esac
-
+  
         # SET ROOTFS DOWNLOAD URL 
         ROOTFS_URL="http://dl-cdn.alpinelinux.org/alpine/v${_RELEASE}/releases/${_ARCH}/alpine-minirootfs-${RELEASE}-${_ARCH}.tar.gz"
         if [ "$RELEASE" = "edge" ]; then
