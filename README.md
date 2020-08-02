@@ -25,7 +25,7 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 # How to use
 ##### Tag's:
 
-`3.9.0` - Alpine Linux 3.9.0
+`3.9.0` - Alpine Linux 3.9.0 :x:
 
 >`3.9.1` - Alpine Linux 3.9.1
 
