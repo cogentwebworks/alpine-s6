@@ -1,0 +1,6 @@
+.travis.yml
+build.sh
+Dockerfile
+.dockerignore
+.git
+linux/*
