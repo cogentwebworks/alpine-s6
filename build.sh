@@ -128,8 +128,8 @@ for RELEASE in "${RELEASES[@]}"; do
 	        --build-arg VCS_REF="${_VCS_REF}" \
 	        --build-arg BUILD_DATE="${_BUILD_DATE}" \
 	        --platform "${_PLATFORMS}" \
-	        -t "${_NAME}:${RELEASE}" \
-            -t "${_NAME}:latest" \
+	        -t "quay.io/${_NAME}:${RELEASE}" \
+            -t "quay.io/${_NAME}:latest" \
 	        .
     else
         docker buildx build \
@@ -138,7 +138,7 @@ for RELEASE in "${RELEASES[@]}"; do
 	        --build-arg VCS_REF="${_VCS_REF}" \
 	        --build-arg BUILD_DATE="${_BUILD_DATE}" \
 	        --platform "${_PLATFORMS}" \
-	        -t "${_NAME}:${RELEASE}" \
+	        -t "quay.io/${_NAME}:${RELEASE}" \
 	        .
     fi
 
