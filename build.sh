@@ -25,7 +25,7 @@ RELEASES=(
     "edge"
 )
 LATEST_STABLE="$(curl -sL https://alpinelinux.org/downloads/ | sed -n 's:.*<strong>\(.*\)</strong>.*:\1:p' )"
-EDGE_LATEST="3.12.0"
+EDGE_LATEST="20200626"
 
 # ARCHITECTURE LIST
 ARCH=(
