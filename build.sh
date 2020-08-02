@@ -31,7 +31,6 @@ EDGE_LATEST="3.12.0"
 ARCH=(
     "linux/amd64"
     "linux/arm64"
-    "linux/ppc64le"
 )
 
 # REMOVE UNSUPPORTED ARCH FOR RELEASE
@@ -89,8 +88,7 @@ for RELEASE in "${RELEASES[@]}"; do
         _ARCH=""
         case "$_PLATFORM" in
             linux/amd64)    _ARCH="x86_64" ;;
-            linux/arm64)    _ARCH="armv7" ;;
-            linux/ppc64le)  _ARCH="ppc64le" ;;
+            linux/arm64)    _ARCH="aarch64" ;;
         esac
   
         # SET ROOTFS DOWNLOAD URL 
@@ -103,9 +101,7 @@ for RELEASE in "${RELEASES[@]}"; do
         if [ "${_ARCH}" = "x86_64" ]; then
             _ARCH="amd64"
         fi
-        if [ "${_ARCH}" = "armv7" ]; then
-            _ARCH="arm"
-        fi
+
         S6_URL="https://github.com/just-containers/s6-overlay/releases/download/v${S6_INSTALL_VERSION}/s6-overlay-${_ARCH}.tar.gz"
 
         # Create dir for platform
