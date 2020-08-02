@@ -1,4 +1,4 @@
-# BUILD FROM SCRATCH
+# syntax = docker/dockerfile:1.0-experimental
 FROM scratch
 
 # BUILD ARGs
