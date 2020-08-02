@@ -1,5 +1,6 @@
 # ALPINE-S6
-[![](https://images.microbadger.com/badges/image/xpecex/alpine-s6.svg)](https://microbadger.com/images/xpecex/alpine-s6 "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/xpecex/alpine-s6.svg)](https://microbadger.com/images/xpecex/alpine-s6 "Get your own version badge on microbadger.com") [![](https://api.travis-ci.org/xpecex/alpine-s6.svg?branch=master)](https://travis-ci.org/github/xpecex/alpine-s6)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![Docker Repository on Quay.io](https://quay.io/repository/dtan4/terraforming/status "Docker Repository on Quay.io")](https://quay.io/repository/dtan4/terraforming)
 
 ALPINE-S6 is an image created from Alpine Linux Source with S6-Overlay
 
@@ -23,50 +24,6 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 
 # How to use
 ##### Tag's:
-
-`3.5.0` - Alpine Linux 3.5.0
-
->`3.5.1` - Alpine Linux 3.5.1
-
->`3.5.2` - Alpine Linux 3.5.2
-
->`3.5.3` - Alpine Linux 3.5.3
-
-
-`3.6.0` - Alpine Linux 3.6.0
-
->`3.6.1` - Alpine Linux 3.6.1
-
->`3.6.2` - Alpine Linux 3.6.2
-
->`3.6.3` - Alpine Linux 3.6.3
-
->`3.6.4` - Alpine Linux 3.6.4
-
->`3.6.5` - Alpine Linux 3.6.5
-
-
-`3.7.0` - Alpine Linux 3.7.0
-
->`3.7.1` - Alpine Linux 3.7.1
-
->`3.7.2` - Alpine Linux 3.7.2
-
->`3.7.3` - Alpine Linux 3.7.3
-
-
-`3.8.0` - Alpine Linux 3.8.0
-
->`3.8.1` - Alpine Linux 3.8.1
-
->`3.8.2` - Alpine Linux 3.8.2
-
->`3.8.3` - Alpine Linux 3.8.3
-
->`3.8.4` - Alpine Linux 3.8.4
-
->`3.8.5` - Alpine Linux 3.8.5
-
 
 `3.9.0` - Alpine Linux 3.9.0
 
@@ -120,4 +77,4 @@ See more: [github.com/just-containers/s6-overlay](https://github.com/just-contai
 `latest` - Alpine Linux 3.11.6
 
 
-`docker run -it xpecex/alpine-s6:<tag>`
+`docker run -it quay.io/cogentwebworks/alpine:<tag>`
