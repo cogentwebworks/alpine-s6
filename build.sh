@@ -64,7 +64,7 @@ S6_INSTALL_VERSION="${S6_VERSION:-$S6_LATEST_VERSION}"
 echo -e "S6-OVERLAY VERSION: ${S6_INSTALL_VERSION} \n"
 
 # DOCKER LOGIN
-echo "$DOCKER_PASSWORD" | docker login quay.io -u "$DOCKER_USER" --password-stdin &> /dev/null
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin  quay.io
 
 # Search release for build
 for RELEASE in "${RELEASES[@]}"; do
