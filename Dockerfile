@@ -10,7 +10,7 @@ ARG VERSION
 # Labels
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.description="Alpine Linux ${VERSION} with S6-Overlay" \
-      org.label-schema.name="cogentwebworks/alpine" \
+      org.label-schema.name="cogentwebworks/alpine-s6" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.usage="https://github.com/cogentwebworks/alpine-s6" \
       org.label-schema.vcs-url="https://github.com/cogentwebworks/alpine-s6" \
